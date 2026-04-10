@@ -97,7 +97,7 @@ export default function Checkout() {
         card: parsed.card || "",
         name: parsed.name || "",
         expiry: parsed.expiry || "",
-      }));
+      });
       setRememberCard(true);
     } catch {
       localStorage.removeItem(SAVED_CARD_KEY);
