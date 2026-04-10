@@ -93,8 +93,7 @@ export default function Checkout() {
       if (!saved) return;
 
       const parsed = JSON.parse(saved);
-      setForm((prev) => ({
-        ...prev,
+      setForm({
         card: parsed.card || "",
         name: parsed.name || "",
         expiry: parsed.expiry || "",

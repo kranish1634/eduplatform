@@ -62,7 +62,7 @@ export default function Navbar() {
   useEffect(() => {
     setMobileOpen(false);
     setMobileExploreOpen(false);
-  }, [location.pathname]);
+  }, [location.pathname, setMobileOpen, setMobileExploreOpen]);
 
   const isActive = (to) => location.pathname === to;
 

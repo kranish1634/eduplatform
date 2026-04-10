@@ -404,7 +404,7 @@ function CourseDetails() {
         partDetail,
         watchedSeconds:  0,
         requiredSeconds: estimateWatchSeconds(lectureDuration),
-        lastTickAt:      Date.now(),
+        lastTickAt:      0,
         completed:       readOpenedMaterials(user?.id, course.id).includes(materialKey),
       });
       return;
